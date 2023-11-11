@@ -11,3 +11,10 @@ describe('My login application', () => {
         await driver.pause(2000);
     });
 });
+//*Test ktorí otvori appku a počká 5 s
+describe('Sample', () => {
+    it('Sample test', async () => {
+      await driver.pause(5000);
+    });
+  });
+  
