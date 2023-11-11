@@ -11,6 +11,7 @@ Mínusy:
 1.	Nastavenie: Nastavenie Appium môže byť náročn
 
 **Appium Inspector**
+
 Plusy:
 1.	Presná identifikácia prvkov: Je navrhnutý na presné identifikovanie prvkov na obrazovke, čo zvyšuje spoľahlivosť testov.
 2.	Integrácia s TypeScript: Je možné ho použiť v testovacích skriptoch napísaných v TypeScripte, čo môže pridať prínosy statického typovania.
@@ -25,11 +26,13 @@ Pre testovanie Android aplikácií:
 *Android SDK*
 
 Pre testovanie iOS aplikácií:
+
 *Xcode*
 *iOS SDK*
 
 
 Pre automatizáciu testov (pre oba systémy):
+
 *Visual Studio Code*
 *Node.js*
 *Appium*
