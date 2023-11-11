@@ -60,21 +60,22 @@ Pri Appium Inspectore treba dávať pozor aby sme mali rovnaké cappabilities na
 
 
 
+
+
+
+
 názov  workflow-u
 name: WebdriverIO Tests
-
 workflow sa spusti pri push na main branche
 on:
   push:
     branches:
       - main
-
 kroky ktoré ma workflow vykonať
 jobs:
   test:
     # prostredie na ktorom sa májú jobs vykonať 
     runs-on: ubuntu-latest
-
     # zoznam Krokov
     steps:
       # získanie kódu
