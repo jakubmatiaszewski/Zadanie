@@ -6,9 +6,12 @@ describe('Login test', () => {
         const loginPage = new LoginPage();
         await loginPage.login(getLogin.email, getLogin.password);
 
-        const actualText = await loginPage.getSomeText();
-        const expectedText = 'uspesne prihlaseny';
-
-        expect(actualText).toEqual(expectedText);
+   
+    it("checks whether the given text is correct" , async () =>{
+       const actualText = await loginPage.getSomeText();
+       expect(actualText).toEqual('Boli ste úspešne prihlásený/á.')
+        })
+   
+   
     });
 });
