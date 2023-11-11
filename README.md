@@ -47,6 +47,7 @@ appium --port 4725 (spustenie servera na danom porte)
 pkill -f appium (ukonči appium server)
 appium-doctor --android/ios (vypíše či máme všetky potrebné dependencies pre testovanie)
 
+
 Inštalácia WebdriverIO:
 npm install webdriverio
 npx wdio config
@@ -54,6 +55,11 @@ npx wdio config
 Pri Appium Inspectore treba dávať pozor aby sme mali rovnaké cappabilities nastavané ako v configu.
 
 5. Integrácia do kontinuálneho integračného procesu (CI/CD):
+
+
+
+
+
 názov  workflow-u
 name: WebdriverIO Tests
 
