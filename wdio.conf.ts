@@ -9,7 +9,7 @@ export const config: Options.Testrunner = {
     autoCompileOpts: {
         autoCompile: true,
         tsNodeOpts: {
-            project: './tsconfig.json',
+            project: 'tsconfig.json',
             transpileOnly: true
         }
     },
@@ -31,9 +31,6 @@ export const config: Options.Testrunner = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [
-        './test/specs/**/*.ts'
-    ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -60,14 +57,8 @@ export const config: Options.Testrunner = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        // capabilities for local Appium web tests on an Android Emulator
-        platformName: 'Android',
-        browserName: 'Chrome',
-        'appium:deviceName': 'Android GoogleAPI Emulator',
-        'appium:platformVersion': '12.0',
-        'appium:automationName': 'UiAutomator2'
-    }],
+    capabilities: [
+  ],
 
     //
     // ===================
