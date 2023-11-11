@@ -55,4 +55,3 @@ Pri Appium Selectore treba dávať pozor aby sme mali rovnaké cappabilities nas
 
 PO zmene v dependencies treba vždy spustit npm install aby nainštalovalo všetko potrebné.
 
-
