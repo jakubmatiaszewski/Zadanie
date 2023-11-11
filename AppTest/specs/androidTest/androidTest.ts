@@ -5,7 +5,6 @@ describe('Login test', () => {
     it('should log in successfully', async () => {
         const loginPage = new LoginPage();
         await loginPage.login(getLogin.email, getLogin.password);
-        await loginPage.clickButton();
 
         const actualText = await loginPage.getSomeText();
         const expectedText = 'uspesne prihlaseny';

@@ -23,10 +23,6 @@ export class LoginPage {
         await this.inputPassword.setValue(password);
         await this.loginBtn.click();
     }
-    /**funkcia na clicknutie buttona po logine */
-    async clickButton() {
-        return (await this.loginBtn).click();
-    }
     /**vytiahnutie textu */
     async getSomeText(): Promise<string> {
         return (await this.info).getText();
