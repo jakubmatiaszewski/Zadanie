@@ -54,16 +54,16 @@ npx wdio config
 Pri Appium Inspectore treba dávať pozor aby sme mali rovnaké cappabilities nastavané ako v configu.
 
 5. Integrácia do kontinuálneho integračného procesu (CI/CD):
-# názov  workflow-u
+názov  workflow-u
 name: WebdriverIO Tests
 
-# workflow sa spusti pri push na main branche
+workflow sa spusti pri push na main branche
 on:
   push:
     branches:
       - main
 
-# kroky ktoré ma workflow vykonať
+kroky ktoré ma workflow vykonať
 jobs:
   test:
     # prostredie na ktorom sa májú jobs vykonať 
