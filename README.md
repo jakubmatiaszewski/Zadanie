@@ -48,7 +48,7 @@ Inštalácia WebdriverIO:
 npm install webdriverio
 npx wdio config
 
-
+Pri Appium Selectore treba dávať pozor aby sme mali rovnaké cappabilities nastavané ako v configu.
 
 PO zmene v dependencies treba vždy spustit npm install aby nainštalovalo všetko potrebné.
 
