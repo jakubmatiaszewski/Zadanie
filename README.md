@@ -51,7 +51,44 @@ Inštalácia WebdriverIO:
 npm install webdriverio
 npx wdio config
 
-Pri Appium Selectore treba dávať pozor aby sme mali rovnaké cappabilities nastavané ako v configu.
+Pri Appium Inspectore treba dávať pozor aby sme mali rovnaké cappabilities nastavané ako v configu.
 
-PO zmene v dependencies treba vždy spustit npm install aby nainštalovalo všetko potrebné.
+5. Integrácia do kontinuálneho integračného procesu (CI/CD):
+# názov  workflow-u
+name: WebdriverIO Tests
 
+# workflow sa spusti pri push na main branche
+on:
+  push:
+    branches:
+      - main
+
+# kroky ktoré ma workflow vykonať
+jobs:
+  test:
+    # prostredie na ktorom sa májú jobs vykonať 
+    runs-on: ubuntu-latest
+
+    # zoznam Krokov
+    steps:
+      # získanie kódu
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # nastavenie Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '10.9.1'
+
+      # nainštalovať npm
+      - name: Install dependencies
+        run: npm install
+
+      # nastavenie typescript
+      - name: Build TypeScript
+        run: npm run build
+
+      # spustenie testov 
+      - name: Run WebdriverIO Tests
+        run: npm run wdio

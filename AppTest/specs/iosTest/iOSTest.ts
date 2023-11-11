@@ -1,13 +1,15 @@
-describe('My login application', () => {
-    it('should login with credentials', async () => {
-        await (await $('~open menu')).click();
-        await driver.pause(2000);
-        await (await $("~menu item log in")).click();
+import { LoginPage } from 'C:\\Users\\Jakub Matiaszewski\\OneDrive\\Plocha\\Zadanie\\Screens\\loginPage';
+import { getLogin } from 'C:\Users\\Jakub Matiaszewski\\OneDrive\\Plocha\\Zadanie\\login-data\\login';
 
-        await driver.pause(2000);
-        await (await $("~Username input field")).setValue("bob@example.com");
-        await (await $("~Password input field")).setValue("10203040");
-        await (await $("~Login button")).click();
-        await driver.pause(2000);
+describe('Login test', () => {
+    it('should log in successfully', async () => {
+        const loginPage = new LoginPage();
+        await loginPage.login(getLogin.email, getLogin.password);
+        await loginPage.clickButton();
+
+        const actualText = await loginPage.getSomeText();
+        const expectedText = 'uspesne prihlaseny';
+
+        expect(actualText).toEqual(expectedText);
     });
 });
