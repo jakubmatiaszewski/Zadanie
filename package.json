@@ -10,6 +10,8 @@
     "webdriverio": "^8.22.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.ts"
+  "wdio": "wdio run ./wdio.conf.ts",
+  "wdio:android" : "wdio run wdio.config.andriod.ts",
+  "wdio:ios" : "wdio run wdio.config.ios.ts"
   }
 }
