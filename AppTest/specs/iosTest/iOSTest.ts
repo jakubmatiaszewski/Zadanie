@@ -1,5 +1,5 @@
-import { LoginPage } from 'C:\\Users\\Jakub Matiaszewski\\OneDrive\\Plocha\\Zadanie\\Screens\\loginPage';
-import { getLogin } from 'C:\Users\\Jakub Matiaszewski\\OneDrive\\Plocha\\Zadanie\\login-data\\login';
+import { LoginPage } from '../../../../Screens/loginPage';
+import { getLogin } from '../../../../../login-data/login';
 
 describe('Login test', () => {
     it('should log in successfully', async () => {
