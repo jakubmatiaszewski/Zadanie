@@ -1,5 +1,5 @@
 import { LoginPage } from '../../../../Screens/loginPage';
-import { getLogin } from '../../../../../login-data/login';
+import { getLogin } from '../../../../login-data/login';
 
 describe('Login test', () => {
     it('should log in successfully', async () => {
